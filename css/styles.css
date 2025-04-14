@@ -4299,3 +4299,10 @@ img.u-pull-left {
         width  : var(--vspace-1_25);
     }
 }
+
+
+
+.github-custom {
+    /* move flex items to center */
+    justify-content : center;
+}
