@@ -1,0 +1,7 @@
+{
+    "name":"Speakeasy",
+    "short_name":"An Ecosystem for the Evaluation of Conversational Agents",
+    "theme_color":"#ffffff",
+    "background_color":"#ffffff",
+    "display":"standalone"
+}
