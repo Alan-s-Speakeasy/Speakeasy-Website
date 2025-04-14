@@ -8,7 +8,6 @@ Speakeasy-Website/
 ├── js/               # JavaScript files
 ├── images/           # Image assets
 ├── index.html        # Main HTML file
-├── styles.html       # Style guide and components
 ├── site.webmanifest  # Web app manifest
 └── favicon.ico       # Website favicon
 ```
