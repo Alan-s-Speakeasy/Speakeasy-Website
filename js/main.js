@@ -12,13 +12,13 @@
     * -------------------------------------------------- */
     const tl = anime.timeline( {
         easing: 'easeInOutCubic',
-        duration: 800,
+        duration: 400,
         autoplay: false
     })
     .add({
         targets: '#loader',
         opacity: 0,
-        duration: 1000,
+        duration: 0,
         begin: function(anim) {
             window.scrollTo(0, 0);
         }
@@ -37,21 +37,27 @@
         opacity: [0, 1]
     }, '-=200')
     .add({
-        targets: ['.s-intro__text', '.s-intro__about'],
+        targets: '.s-intro__text',
         translateY: [100, 0],
         opacity: [0, 1],
         delay: anime.stagger(400)
-    })
+    }, '-=200')
+    .add({
+        targets: '.s-intro__about',
+        translateY: [100, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(400)
+    }, '-=200') 
     .add({
         targets: '.s-intro__bg',
         opacity: [0, 1],
-        duration: 1000,
-    })
+        duration: 500,
+    }, '-=200')
     .add({
         targets: ['.s-intro__scroll-down'],
         opacity: [0, 1],
         duration: 400
-    });
+    }, '-=200');
 
 
    /* preloader
@@ -177,8 +183,8 @@
                         targets: current.querySelectorAll('[data-animate-el]'),
                         opacity: [0, 1],
                         translateY: [100, 0],
-                        delay: anime.stagger(200, {start: 200}),
-                        duration: 800,
+                        delay: anime.stagger(100, {start: 100}),
+                        duration: 400,
                         easing: 'easeInOutCubic',
                         begin: function(anim) {
                             current.classList.add('ss-animated');
@@ -202,7 +208,7 @@
                                     innerText: [0, val],
                                     easing: 'linear',
                                     round: 1,
-                                    duration: 2000
+                                    duration: 1000
                                 });
                             }, i * 200);
                             
