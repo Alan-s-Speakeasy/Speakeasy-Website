@@ -3062,10 +3062,10 @@ img.u-pull-left {
 
 .s-header__menu-toggle span {
     display          : block;
-    background-color : white;
+    background-color : black;
     width            : 22px;
     height           : 1px;
-    margin-top       : -1px;
+    margin-top       : 0px;
     font             : 0/0 a;
     text-shadow      : none;
     color            : transparent;
@@ -3107,7 +3107,7 @@ img.u-pull-left {
 
 .s-header__menu-toggle.is-clicked span::before,
 .s-header__menu-toggle.is-clicked span::after {
-    background-color : white;
+    background-color : black;
     transition-delay : 0s, 0.2s;
 }
 
@@ -3182,7 +3182,7 @@ img.u-pull-left {
         text-transform : none;
         letter-spacing : 0;
         padding        : var(--vspace-0_375) 0;
-        color          : white;
+        color          : black;
     }
 
     .s-header__nav a:focus,
