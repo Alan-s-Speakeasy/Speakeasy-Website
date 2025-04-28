@@ -97,7 +97,7 @@
     /* color-1(#24A89B)
      * color-2(#eddea4)
      */
-    --color-1                      : hsla(207, 65%, 40%, 1);
+    --color-1                      : #0028a5;
     --color-2                      : hsla(48, 67%, 79%, 1);
 
     /* theme color variations
@@ -135,12 +135,12 @@
     --color-gray-17                : #060607;
     --color-gray-16                : #080809;
     --color-gray-15                : #0a0b0b;
-    --color-gray-14                : #0c0d0d;
+    --color-gray-14                : #f3f2f2;
     --color-gray-13                : #0e0f0f;
-    --color-gray-12                : #101112;
+    --color-gray-12                : #efeeec; /* background */
     --color-gray-11                : #121314;
     --color-gray-10                : #141516;
-    --color-gray-9                 : #2c2c2d;
+    --color-gray-9                 : #d3d3d2;
     --color-gray-8                 : #434445;
     --color-gray-7                 : #5b5b5c;
     --color-gray-6                 : #727373;
@@ -154,7 +154,7 @@
     /* text
      */
     --color-text                   : var(--color-gray-5);
-    --color-text-dark              : var(--color-white);
+    --color-text-dark              : var(--color-black);
     --color-text-light             : var(--color-gray-6);
     --color-placeholder            : var(--color-gray-6);
 
@@ -2825,7 +2825,7 @@ img.u-pull-left {
     font-family    : var(--font-2);
     font-size      : var(--text-sm);
     font-weight    : 600;
-    color          : var(--color-body);
+    color          : black;
     text-transform : uppercase;
     letter-spacing : .3em;
     margin-top     : 0;
@@ -2987,19 +2987,19 @@ img.u-pull-left {
     line-height         : calc(var(--header-height) - 1px);
     text-transform      : uppercase;
     letter-spacing      : .4em;
-    color               : rgba(255, 255, 255, 0.5);
+    color               : rgba(0, 0, 0, 0.5);
     padding             : 0 2.8rem;
     transition-property : color, background-color;
 }
 
 .s-header__nav a:focus,
 .s-header__nav a:hover {
-    color : white;
+    color : black;
 }
 
 .s-header__nav .current a {
     background-color : var(--color-gray-9);
-    color            : var(--color-white);
+    color            : var(--color-black);
 }
 
 .s-header__nav ul {
@@ -3280,7 +3280,7 @@ img.u-pull-left {
 .s-intro__bg::before {
     content          : "";
     display          : block;
-    background-color : black;
+    background-color : white;
     opacity          : .3;
     position         : absolute;
     top              : 0;
@@ -3318,7 +3318,7 @@ img.u-pull-left {
     font-weight      : 300;
     text-transform   : uppercase;
     letter-spacing   : .6em;
-    color            : white;
+    color            : black;
     line-height      : 1.6rem;
     padding          : .8rem 0;
     transform        : translateY(0) rotate(90deg);
@@ -3335,7 +3335,7 @@ img.u-pull-left {
 }
 
 .s-intro__scroll-down svg path {
-    fill : white;
+    fill : black;
 }
 
 .s-intro__scroll-down:focus,
@@ -3351,7 +3351,7 @@ img.u-pull-left {
     flex             : none;
     width            : 75%;
     max-width        : 880px;
-    background-color : rgba(10, 11, 11, 0.75);
+    background-color : rgba(245, 244, 244, 0.75);
     font-weight      : 300;
     font-size        : calc(var(--text-size) * 1.1111);
     line-height      : var(--vspace-1_25);
@@ -3589,9 +3589,14 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    background-color : var(--color-1-dark);
+    background-color : var( --uzh-cyan-3);
     padding-top      : var(--vspace-5);
     padding-bottom   : var(--vspace-5);
+}
+
+.s-how-to-use {
+    padding-top      : var(--vspace-5);
+    /* padding-bottom   : var(--vspace-5); */
 }
 
 /* --------------------------------------------------------------------
@@ -3600,7 +3605,7 @@ img.u-pull-left {
 .services-list {
     max-width  : 1080px;
     margin-top : var(--vspace-2_5);
-    color      : white;
+    color      : black;
 }
 
 .services-list .column:nth-child(2n + 1) {
@@ -3618,7 +3623,7 @@ img.u-pull-left {
 
 .service-item h3 {
     margin-top : 0;
-    color      : white;
+    color      : black;
 }
 
 .service-icon-block {
@@ -4192,7 +4197,7 @@ img.u-pull-left {
 .s-footer__block {
     font-size   : var(--text-lg);
     line-height : calc(1.375 * var(--space));
-    color       : white;
+    color       : black;
 }
 
 .s-footer__bottom {
@@ -4209,7 +4214,7 @@ img.u-pull-left {
 }
 
 .contact-list a {
-    color : white;
+    color : black;
 }
 
 .contact-list li {
@@ -4226,7 +4231,7 @@ img.u-pull-left {
 }
 
 .ss-copyright a {
-    color : white;
+    color : black;
 }
 
 .ss-copyright span {
