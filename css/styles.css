@@ -3589,9 +3589,21 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-    background-color : var( --uzh-cyan-3);
+    background-color : var( --uzh-blue-0);
     padding-top      : var(--vspace-5);
     padding-bottom   : var(--vspace-5);
+    .text-pretitle {
+        color: white;
+    }
+    .text-display-title {
+        color: white;
+    }
+    .service-item {
+        color: white;
+        h3 {
+            color: white;
+        }
+    }
 }
 
 .s-how-to-use {
