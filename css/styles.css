@@ -3265,15 +3265,15 @@ img.u-pull-left {
 }
 
 .s-intro__bg {
-    background-image    : url(../images/intro-bg-inverted.png);
+    background-image    : url(../images/intro-bg-blue.png);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
     width               : 100%;
     position            : absolute;
-    top                 : calc(1.5 * var(--text-huge-line-height) * var(--text-huge) * var(--text-huge-multiplier));
+    top                 : calc(-1 * var(--text-huge-line-height) * var(--text-huge) * var(--text-huge-multiplier));;
     right               : 0;
-    bottom              : 0;
+    bottom              : calc(0.5 * var(--text-huge-line-height) * var(--text-huge) * var(--text-huge-multiplier));;
     left                : 0;
 }
 
@@ -3281,7 +3281,7 @@ img.u-pull-left {
     content          : "";
     display          : block;
     background-color : white;
-    opacity          : .3;
+    opacity          : 0;
     position         : absolute;
     top              : 0;
     left             : 0;
@@ -3299,12 +3299,13 @@ img.u-pull-left {
     letter-spacing : normal;
     text-align     : center;
     margin         : 0;
-    padding-bottom : calc(10 * var(--space));
+    padding-bottom : calc(6 * var(--space));
     position       : relative;
+    color: white
 }
 
 .s-intro__text span {
-    color : var(--color-1);
+    color : white;
 }
 
 /* --------------------------------------------------------------------
@@ -3367,7 +3368,7 @@ img.u-pull-left {
     display          : block;
     width            : 1px;
     height           : var(--vspace-2);
-    background-color : var(--color-1);
+    background-color : white;
     transform        : translateX(-50%);
     position         : absolute;
     top              : calc(var(--vspace-1) * -1);
